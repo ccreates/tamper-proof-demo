@@ -1,0 +1,20 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /api
+spring:
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
+      # 连接超时时间（毫秒）
+      timeout: 10000
+      pool:
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 10
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 100
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
